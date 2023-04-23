@@ -52,11 +52,8 @@ function! dashboard#section#instance()
 endfunction
 
 function! s:set_section()
-    let l:sorted = []
-    for key in keys(s:Section)
-        call add(l:sorted,key)
-    endfor
-    for key in sort(l:sorted)
+    let key_order = ['find_history', 'last_session', 'find_file', 'find_word', 'new_file']
+    for key in key_order
         let dashboard_{key} = g:dashboard#utils#set_custom_section(g:dashboard#utils#draw_center(s:Section[key]))
         call append('$',dashboard_{key})
         call dashboard#register(line('$'), key, key)
