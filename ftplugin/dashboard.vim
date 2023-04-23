@@ -1,2 +1,2 @@
 nnoremap <buffer> e :DashboardNewFile<CR>
-nnoremap <buffer> q :quit!
+nnoremap <buffer> q :quit!<CR>
