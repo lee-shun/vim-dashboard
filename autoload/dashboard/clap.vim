@@ -3,7 +3,7 @@
 " Maintainer:  Glepnir <http://github.com/glepnir>
 
 function! dashboard#clap#find_file() abort
-  Clap files ++finder=rg --ignore --hidden --files
+  Clap files
 endfunction
 
 function! dashboard#clap#find_history() abort
@@ -15,7 +15,7 @@ function! dashboard#clap#change_colorscheme() abort
 endfunction
 
 function! dashboard#clap#find_word() abort
-  Clap grep2
+  Clap grep
 endfunction
 
 function! dashboard#clap#book_marks() abort
