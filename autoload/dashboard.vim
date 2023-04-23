@@ -119,7 +119,7 @@ function! s:print_plugins_message() abort
     return [' Have fun with ' . l:vim]
   endif
   let l:footer=[]
-  let footer_string= l:vim .' loaded ' . l:total_plugins . ' plugins '
+  let footer_string= '🎉 Old school '.l:vim .' loaded ' . l:total_plugins . ' plugins 🎊'
   call insert(l:footer,footer_string)
   return l:footer
 endfunction
