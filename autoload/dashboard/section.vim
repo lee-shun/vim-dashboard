@@ -57,7 +57,7 @@ function! s:set_section()
         call add(l:sorted,key)
     endfor
 
-    for key in sort(l:sorted)
+    for key in l:sorted
         let dashboard_{key} = g:dashboard#utils#set_custom_section(g:dashboard#utils#draw_center(s:Section[key]))
         call append('$',dashboard_{key})
         call dashboard#register(line('$'), key, key)
