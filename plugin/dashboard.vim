@@ -27,6 +27,7 @@ let g:session_enable = get(g:,'dashboard_enable_session',1)
 augroup dashboard
   autocmd!
   autocmd VimEnter * nested call s:loaded_dashboard()
+  autocmd WinLeave set laststatus=2
   autocmd BufReadPost * call dashboard#change_to_dir(expand("%:p"))
 augroup END
 
