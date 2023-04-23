@@ -13,7 +13,7 @@ else
     let s:dashboard_shortcut['last_session'] = 'SPC f s'
     let s:dashboard_shortcut['find_history'] = 'SPC f m'
     let s:dashboard_shortcut['find_file'] = 'SPC f f'
-    let s:dashboard_shortcut['new_file'] = 'e'
+    let s:dashboard_shortcut['new_file'] = '   e   '
     let s:dashboard_shortcut['change_colorscheme'] = 'SPC t c'
     let s:dashboard_shortcut['find_word'] = 'SPC f w'
     let s:dashboard_shortcut['book_marks'] = 'SPC f b'
