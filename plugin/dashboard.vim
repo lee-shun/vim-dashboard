@@ -50,14 +50,14 @@ if g:session_enable
     \ call sessions#session#session_load(<q-args>)
 
   " Save session on quit if one is loaded
-  augroup plugin_sessions
-    autocmd!
-    " If session is loaded, write session file on quit
-    autocmd VimLeavePre *
-      \ if ! empty(v:this_session) && ! exists('g:SessionLoad')
-      \ |   execute 'mksession! ' . fnameescape(v:this_session)
-      \ | endif
-  augroup END
+  " augroup plugin_sessions
+  "   autocmd!
+  "   " If session is loaded, write session file on quit
+  "   autocmd VimLeavePre *
+  "     \ if ! empty(v:this_session) && ! exists('g:SessionLoad')
+  "     \ |   execute 'mksession! ' . fnameescape(v:this_session)
+  "     \ | endif
+  " augroup END
 endif
 
 command! -nargs=0 -bar Dashboard call dashboard#instance(0)
