@@ -2,23 +2,23 @@
 " Description: A fancy start screen for Vim.
 " Maintainer:  Glepnir <http://github.com/glepnir>
 
-function! dashboard#coc_lists#find_file() abort
+function! dashboard#coclists#find_file() abort
   CocList files
 endfunction
 
-function! dashboard#coc_lists#find_history() abort
+function! dashboard#coclists#find_history() abort
   CocList mru
 endfunction
 
-function! dashboard#coc_lists#change_colorscheme() abort
+function! dashboard#coclists#change_colorscheme() abort
   CocList colors
 endfunction
 
-function! dashboard#coc_lists#find_word() abort
+function! dashboard#coclists#find_word() abort
  CocList grep
 endfunction
 
-function! dashboard#coc_lists#book_marks() abort
+function! dashboard#coclists#book_marks() abort
   CocList file
 endfunction
 
