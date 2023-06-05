@@ -35,10 +35,10 @@ if exists('g:dashboard_custom_section')
     call extend(s:Section, g:dashboard_custom_section)
 else
     let s:Section = {
-                \ 'find_history'         :[s:dashboard_shortcut_icon['find_history'].'Recently opened files                 '.s:dashboard_shortcut['find_history']],
-                \ 'last_session'         :[s:dashboard_shortcut_icon['last_session'].'Recently last session                 '.s:dashboard_shortcut['last_session']],
+                \ 'find_history'         :[s:dashboard_shortcut_icon['find_history'].'Recently Opened Files                 '.s:dashboard_shortcut['find_history']],
+                \ 'last_session'         :[s:dashboard_shortcut_icon['last_session'].'Recently Last Session                 '.s:dashboard_shortcut['last_session']],
                 \ 'find_file'            :[s:dashboard_shortcut_icon['find_file'].'Find  File                            '.s:dashboard_shortcut['find_file']],
-                \ 'find_word'            :[s:dashboard_shortcut_icon['find_word'].'Find  word                            '.s:dashboard_shortcut['find_word']],
+                \ 'find_word'            :[s:dashboard_shortcut_icon['find_word'].'Find  Word                            '.s:dashboard_shortcut['find_word']],
                 \ 'new_file'             :[s:dashboard_shortcut_icon['new_file'].'New  File                             '.s:dashboard_shortcut['new_file']],
                 \ }
 endif
