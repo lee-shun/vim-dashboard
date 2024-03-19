@@ -1,19 +1,19 @@
-function! dashboard#leaderf#find_file() abort
+function! dashboard#fuzzyy#find_file() abort
     FuzzyFiles
 endfunction
 
-function! dashboard#leaderf#find_history() abort
+function! dashboard#fuzzyy#find_history() abort
     FuzzyMRUFiles
 endfunction
 
-function! dashboard#leaderf#change_colorscheme() abort
+function! dashboard#fuzzyy#change_colorscheme() abort
     FuzzyColors
 endfunction
 
-function! dashboard#leaderf#find_word() abort
+function! dashboard#fuzzyy#find_word() abort
     FuzzyGrep
 endfunction
 
-function! dashboard#leaderf#book_marks() abort
+function! dashboard#fuzzyy#book_marks() abort
     FuzzyFiles
 endfunction
