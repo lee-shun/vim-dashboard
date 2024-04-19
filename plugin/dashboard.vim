@@ -13,7 +13,11 @@ if !get(g:, 'dashboard_disable_at_vimenter') && (!has('nvim') || has('nvim-0.3.5
   set shortmess+=I
 endif
 
-let s:home_dir = getenv('HOME')
+if exist('*getenv')
+    let s:home_dir = getenv('HOME')
+else
+    let s:home_dir = system('echo $HOME')
+endif
 let s:session_path = expand(($XDG_CACHE_HOME ? $XDG_CACHE_HOME : s:home_dir.'/.cache') . '/vim')
 
 " Options
