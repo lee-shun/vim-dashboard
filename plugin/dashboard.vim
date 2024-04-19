@@ -13,7 +13,7 @@ if !get(g:, 'dashboard_disable_at_vimenter') && (!has('nvim') || has('nvim-0.3.5
   set shortmess+=I
 endif
 
-if exist('*getenv')
+if exists('*getenv')
     let s:home_dir = getenv('HOME')
 else
     let s:home_dir = system('echo $HOME')
